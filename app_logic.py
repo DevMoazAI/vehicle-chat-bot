@@ -42,29 +42,6 @@ def handle_user_query(user_input, session_id="guest"):
 
     return assistant_reply, history  # history is list of dicts (for type='messages')
 
-
-# def handle_user_query(user_input, session_id="guest"):
-#     # Load previous messages
-#     history = load_chat_history(session_id)
-
-#     # Build LLM message format
-#     messages = [{"role": "system", "content": open("prompts/system_prompt.txt", "r", encoding="utf-8").read()}]
-#     messages += history
-#     messages.append({"role": "user", "content": user_input})
-
-#     # Get LLM response
-#     assistant_reply = get_response_from_llm(messages)
-
-#     # Append to history
-#     history.append({"role": "user", "content": user_input})
-#     history.append({"role": "assistant", "content": assistant_reply})
-
-#     # Save updated history
-#     save_chat_history(session_id, history)
-
-#     return assistant_reply, history
-
-
 def list_sessions():
     """List all saved session IDs (excluding extension)."""
     files = sorted(os.listdir(SESSION_LOG_DIR), reverse=True)
