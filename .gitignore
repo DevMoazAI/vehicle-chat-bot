@@ -1,0 +1,35 @@
+# Python Bytecode & Caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+*.env
+
+# Environment Variables
+.env
+.env.*
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Session Logs & Chat Metadata
+session_logs/
+chat_metadata/
+
+# Test & Temp Files
+*.log
+*.tmp
+*.bak
+
+# IDE & Editor Config
+.vscode/
+.idea/
+*.swp
