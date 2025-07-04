@@ -38,10 +38,6 @@ vehicle-chat-bot/
 ├── venv/ # Ignored (Python virtualenv)
 └── .env # Ignored (stores API keys)
 
-yaml
-Copy
-Edit
-
 ---
 
 ## 🛠️ Getting Started
@@ -50,19 +46,27 @@ Edit
 ```bash
 git clone https://github.com/DevMoazAI/vehicle-chat-bot.git
 cd vehicle-chat-bot
+
+
 2. Create & activate virtual environment
 
 python3 -m venv venv
 source venv/bin/activate     # On Windows: venv\Scripts\activate
+
+
 3. Install dependencies
 
 pip install -r requirements.txt
-4. Create .env file
-Store your API keys locally (won’t be committed). Example:
 
+
+4. Create .env file
+
+Store your API keys locally (won’t be committed). Example:
 OPENAI_API_KEY=your_openai_key
 OTHER_SECRET=...
+
 5. Run the app
+
 python app.py
 Visit the provided local URL (e.g., http://127.0.0.1:7860) to use the chatbot.
 
